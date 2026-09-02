@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JOGA 2026 — Media Kit · Patrocínio e Apoio</title>
-<meta name="description" content="Media kit oficial do JOGA 2026 — Jogos dos Servidores Municipais de Guarapuava. 14 a 24 de outubro de 2026. Cotas de apoio, alcance, público e oportunidades de exposição de marca.">
+<meta name="description" content="Media kit oficial do JOGA 2026 — Jogos dos Servidores Municipais de Guarapuava. 26 de outubro a 07 de novembro de 2026. Cotas de apoio, alcance, público e oportunidades de exposição de marca.">
 <meta name="theme-color" content="#0b1030">
 <meta property="og:type" content="website">
 <meta property="og:title" content="JOGA 2026 — Media Kit · Patrocínio e Apoio">
-<meta property="og:description" content="14 a 24 de outubro de 2026. 2.500 participantes previstos, 23 modalidades, 11 dias. Conheça as oportunidades de patrocínio do JOGA 2026.">
+<meta property="og:description" content="26 de outubro a 07 de novembro de 2026. 2.500 participantes previstos e 23 modalidades. Conheça as oportunidades de patrocínio do JOGA 2026.">
 <meta property="og:image" content="assets/logo_iso.png">
 <meta property="og:locale" content="pt_BR">
 <link rel="icon" href="assets/logo_mark.png">
@@ -270,6 +270,24 @@ body{
 .expo__ico{flex:0 0 34px;height:34px;border-radius:9px;background:var(--accent,var(--blue));display:grid;place-items:center;color:#fff}
 .expo__ico svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
+/* ---------- Itens patrocinaveis ---------- */
+.kits{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:980px){.kits{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.kits{grid-template-columns:1fr}}
+.kit{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease}
+.kit:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(0,0,0,.10)}
+.kit__img{aspect-ratio:4/3;overflow:hidden;background:var(--cream)}
+.kit__img img{width:100%;height:100%;object-fit:cover;display:block}
+.kit__body{padding:16px 16px 18px;border-top:5px solid var(--accent,var(--orange))}
+.kit h4{font-family:var(--fDisp);font-size:20px;text-transform:uppercase;letter-spacing:.02em;margin-bottom:6px;color:var(--accent,var(--orange))}
+.kit p{font-size:13.5px;color:var(--muted);line-height:1.45}
+.needs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+@media(max-width:820px){.needs{grid-template-columns:1fr}}
+.need{background:var(--cream);border:1px solid var(--line);border-left:5px solid var(--accent,var(--green));border-radius:14px;padding:16px 18px}
+.need h4{font-size:13.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.need p{font-size:13.5px;color:var(--muted);line-height:1.5}
+.tier__val{font-family:var(--fDisp);font-size:18px;letter-spacing:.01em;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);border-radius:999px;padding:5px 13px;display:inline-block;margin-bottom:16px}
+
 /* ---------- Cotas ---------- */
 .sec--dark{
   background:linear-gradient(180deg,#14224d 0%,#1F4FB8 100%);
@@ -431,17 +449,32 @@ body{
   .tier{padding:14px 11px;border-radius:12px}
   .tier__name{font-size:19px;margin:6px 0 3px}
   .tier__sub{font-size:8pt;letter-spacing:.06em;margin-bottom:10px}
-  .tier ul{gap:6px;margin-bottom:12px}
-  .tier li{font-size:8.4pt;padding-left:17px;line-height:1.3}
+  .tier ul{gap:5px;margin-bottom:10px}
+  .tier li{font-size:7.6pt;padding-left:15px;line-height:1.26}
   .tier li::before{width:11px;height:11px;top:2px;-webkit-mask-size:9px;mask-size:9px}
   .tier__foot{font-size:7.6pt;padding-top:9px}
   .tier__flag{position:static;display:inline-block;font-size:7.4pt;padding:3px 8px;margin-bottom:2px}
   .cta{padding-bottom:18px}
 
   /* a secao de cotas cabe inteira numa folha */
-  .sec--dark .section__head{margin-bottom:18px}
-  .sec--dark p.lead{font-size:9.2pt!important;margin-top:12px!important}
-  .note{break-inside:avoid;margin-top:14px;padding:12px 15px;font-size:8.8pt;line-height:1.45;border-radius:10px}
+  .sec--dark .section__head{margin-bottom:13px}
+  .sec--dark p.lead{font-size:8.8pt!important;margin-top:11px!important}
+  .note{break-inside:avoid;margin-top:11px;padding:10px 14px;font-size:8.3pt;line-height:1.4;border-radius:10px}
+  #cotas{break-inside:avoid}
+  #itens{break-before:page}
+
+  .kits{grid-template-columns:repeat(2,1fr);gap:10px}
+  .kit__img{aspect-ratio:16/9}
+  .kit,.need{break-inside:avoid}
+  .kit__body{padding:12px 14px 13px;border-top-width:4px}
+  .kit h4{font-size:17px;margin-bottom:4px}
+  .kit p{font-size:8.7pt;line-height:1.36}
+  .needs{grid-template-columns:repeat(3,1fr);gap:9px;margin-top:12px}
+  #itens{break-inside:avoid}
+  .need{padding:10px 12px}
+  .need h4{font-size:9.6pt}
+  .need p{font-size:9pt}
+  .tier__val{font-size:9pt;padding:2px 8px;margin-bottom:8px}
 
   /* rodape nao abre folha nova sozinho */
   .footer{break-before:avoid;padding:22px 0 16px}
@@ -466,6 +499,7 @@ body{
       <a href="#publico">Público</a>
       <a href="#porque">Por que apoiar</a>
       <a href="#exposicao">Exposição</a>
+      <a href="#itens">Itens</a>
       <a href="#cotas">Cotas</a>
       <a href="index.html">Site oficial</a>
     </nav>
@@ -481,6 +515,7 @@ body{
       <a href="#publico">Público</a>
       <a href="#porque">Por que apoiar</a>
       <a href="#exposicao">Exposição</a>
+      <a href="#itens">Itens</a>
       <a href="#cotas">Cotas</a>
       <a href="#contato">Quero apoiar →</a>
       <a href="index.html">Site oficial</a>
@@ -495,10 +530,9 @@ body{
       <div>
         <span class="eyebrow eyebrow--light">Media kit · Patrocínio e apoio</span>
         <h1 class="hero__title">Coloque sua marca<br>ao lado de quem<br><span style="color:var(--yellow)">move a cidade</span></h1>
-        <p class="lead lead--light">O <strong>JOGA 2026 — Jogos dos Servidores Municipais de Guarapuava</strong> reúne mais de dois mil servidores de todas as secretarias em onze dias de competição, integração e celebração. Este é o convite para a sua empresa participar dessa história.</p>
+        <p class="lead lead--light">O <strong>JOGA 2026 — Jogos dos Servidores Municipais de Guarapuava</strong> reúne mais de dois mil servidores de todas as secretarias em competições, integração e celebração de 26 de outubro a 07 de novembro. Este é o convite para a sua empresa participar dessa história.</p>
         <div class="hero__meta">
-          <span class="chip" style="border-color:var(--yellow);color:var(--yellow)">14 a 24 de outubro de 2026</span>
-          <span class="chip">11 dias</span>
+          <span class="chip" style="border-color:var(--yellow);color:var(--yellow)">26 de outubro a 07 de novembro de 2026</span>
           <span class="chip">23 modalidades</span>
           <span class="chip">6 equipes</span>
           <span class="chip">2ª edição</span>
@@ -535,7 +569,7 @@ body{
       <span class="eyebrow">O que é o JOGA</span>
       <h2 class="display">Um programa da cidade<br>para quem <em class="ink ink--g">faz a cidade</em></h2>
       <p class="lead">O JOGA é o programa esportivo oficial da Prefeitura de Guarapuava voltado aos servidores municipais. Nasceu para promover saúde, qualidade de vida e integração entre as secretarias — e virou, em uma única edição, um dos eventos mais aguardados do calendário interno do município.</p>
-      <p class="lead">Em 2026 o programa chega à sua segunda edição, maior em todos os sentidos: mais modalidades, mais dias de competição e a expectativa de quase dobrar o número de participantes. A realização é da Prefeitura Municipal de Guarapuava, com coordenação compartilhada entre as secretarias de Administração, Comunicação, Cultura, Turismo e Esporte.</p>
+      <p class="lead">Em 2026 o programa chega à sua segunda edição, maior em todos os sentidos: mais modalidades, mais dias de competição e a expectativa de dobrar o número de participantes. A realização é da Prefeitura Municipal de Guarapuava, com coordenação compartilhada entre as secretarias de Administração, Comunicação, Cultura, Turismo e Esporte.</p>
     </div>
 
     <div class="grid-3">
@@ -595,9 +629,9 @@ body{
 
     <div class="stats rv" style="margin-top:16px;grid-template-columns:repeat(3,1fr)">
       <div class="stat stat--b">
-        <div class="stat__num">11</div>
-        <div class="stat__lbl">Dias de evento</div>
-        <p class="stat__note">14 a 24 de outubro de 2026</p>
+        <div class="stat__num">9</div>
+        <div class="stat__lbl">Pontos de contato de marca</div>
+        <p class="stat__note">Do kit atleta à premiação — inventário completo abaixo</p>
       </div>
       <div class="stat stat--g">
         <div class="stat__num">6</div>
@@ -607,7 +641,7 @@ body{
       <div class="stat stat--k">
         <div class="stat__num">7</div>
         <div class="stat__lbl">Blocos de competição</div>
-        <p class="stat__note">Agrupamento das 23 modalidades ao longo dos onze dias</p>
+        <p class="stat__note">Agrupamento das 23 modalidades ao longo de todo o período de competição</p>
       </div>
     </div>
   </div>
@@ -623,10 +657,10 @@ body{
         <p class="lead">O servidor municipal é um dos públicos mais consistentes de Guarapuava: renda previsível, vínculo empregatício estável e vida enraizada no município. Ele consome, decide e influencia localmente — e leva a família junto para o evento.</p>
         <ul class="bullets">
           <li><strong>Servidores de todas as secretarias</strong> — educação, saúde, obras, administração, cultura, meio ambiente, assistência social e mais.</li>
-          <li><strong>Famílias na arquibancada</strong> — cônjuges, filhos e amigos acompanham as competições ao longo dos onze dias.</li>
+          <li><strong>Famílias na arquibancada</strong> — cônjuges, filhos e amigos acompanham as competições ao longo de todo o período de competição.</li>
           <li><strong>Renda estável e poder de compra local</strong> — público economicamente ativo que compra, contrata e recomenda dentro de Guarapuava.</li>
           <li><strong>Multiplicadores naturais</strong> — servidores atendem a população diariamente e circulam por todos os bairros da cidade.</li>
-          <li><strong>Público concentrado em onze dias</strong> — as competições se distribuem por arenas e ginásios da cidade, com fluxo constante de servidores e acompanhantes.</li>
+          <li><strong>Público concentrado no período dos jogos</strong> — as competições se distribuem por arenas e ginásios da cidade, com fluxo constante de servidores e acompanhantes.</li>
         </ul>
       </div>
       <div class="chars rv">
@@ -651,7 +685,7 @@ body{
         <span class="card__bar"></span>
         <div class="card__n">01</div>
         <h3>Visibilidade contínua, não pontual</h3>
-        <p>Não é um dia de evento: são onze dias de competições, com presença da marca nas arenas, nos materiais, nos canais oficiais e no conteúdo produzido antes, durante e depois. A exposição se estende por semanas.</p>
+        <p>Não é um dia de evento: o JOGA ocupa o calendário da cidade de 26 de outubro a 07 de novembro, com presença da marca nas arenas, nos materiais impressos, no site oficial do JOGA e no conteúdo produzido antes, durante e depois. A exposição se estende por semanas.</p>
       </article>
       <article class="card rv" style="--accent:var(--blue)">
         <span class="card__bar"></span>
@@ -695,7 +729,7 @@ body{
       </div>
       <div class="expo__item rv" style="--accent:var(--green)">
         <span class="expo__ico"><svg viewBox="0 0 24 24"><path d="M4 4v16"/><path d="M4 5h13l-2 4 2 4H4"/></svg></span>
-        <div><h4>Arenas e ginásios</h4><p>Banners, faixas e testeiras nos locais de competição das 23 modalidades, ao longo dos onze dias.</p></div>
+        <div><h4>Arenas e ginásios</h4><p>Banners, faixas e testeiras nos locais de competição das 23 modalidades, ao longo de todo o período de competição.</p></div>
       </div>
       <div class="expo__item rv" style="--accent:var(--yellow)">
         <span class="expo__ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg></span>
@@ -725,21 +759,81 @@ body{
   </div>
 </section>
 
+<!-- ============ ITENS PATROCINAVEIS ============ -->
+<section class="section sec--white" id="itens">
+  <div class="container">
+    <div class="section__head rv">
+      <span class="eyebrow">O que dá para patrocinar</span>
+      <h2 class="display">Sua marca vai<br>pra <em class="ink ink--o">mão do atleta</em></h2>
+      <p class="lead">O apoio pode ser em recurso financeiro ou em bens, materiais e serviços, com valor de mercado estimado. Estes são os itens que o JOGA 2026 precisa — e que levam marca junto.</p>
+    </div>
+
+    <div class="kits rv">
+      <article class="kit" style="--accent:var(--blue)">
+        <div class="kit__img"><img src="assets/mk-sacochila.jpg" alt="Sacochila do JOGA 2026"></div>
+        <div class="kit__body">
+          <h4>Sacochila</h4>
+          <p>Entregue a cada participante inscrito. Sai do ginásio nas costas do atleta e continua circulando pela cidade meses depois do evento.</p>
+        </div>
+      </article>
+      <article class="kit" style="--accent:var(--orange)">
+        <div class="kit__img"><img src="assets/mk-squeeze.jpg" alt="Squeeze do JOGA 2026"></div>
+        <div class="kit__body">
+          <h4>Squeeze</h4>
+          <p>Fica na quadra, na mesa de trabalho e na academia. É o item do kit com maior tempo de exposição por participante.</p>
+        </div>
+      </article>
+      <article class="kit" style="--accent:var(--yellow)">
+        <div class="kit__img"><img src="assets/mk-bottons.jpg" alt="Bottons do JOGA 2026"></div>
+        <div class="kit__body">
+          <h4>Bottons</h4>
+          <p>Colecionáveis por modalidade e por equipe. Custo baixo de produção e adesão alta — vão parar no crachá e na mochila.</p>
+        </div>
+      </article>
+      <article class="kit" style="--accent:var(--green)">
+        <div class="kit__img"><img src="assets/mk-adesivos.jpg" alt="Adesivos #APOIADOR do JOGA 2026"></div>
+        <div class="kit__body">
+          <h4>Adesivos</h4>
+          <p>O selo <strong>#APOIADOR</strong> em adesivo: vitrine, balcão, notebook, garrafa e carro. A marca do apoiador circula onde o servidor estiver.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="needs rv">
+      <div class="need" style="--accent:var(--orange)">
+        <h4>Competição</h4>
+        <p>Medalhas · Troféus · Arbitragem · Sonorização · Locação de espaços</p>
+      </div>
+      <div class="need" style="--accent:var(--blue)">
+        <h4>Atleta em quadra</h4>
+        <p>Água mineral · Isotônicos · Frutas</p>
+      </div>
+      <div class="need" style="--accent:var(--green)">
+        <h4>Uniforme e sinalização</h4>
+        <p>Camisetas das seis equipes · Credenciais · Sinalização das arenas</p>
+      </div>
+    </div>
+
+    <p class="lead rv" style="font-size:14.5px;margin-top:18px">Quantidades e especificações constam do Anexo IV do Edital de Chamamento Público nº 02/2026 – SMAD. A proposta pode cobrir um item inteiro ou uma parte dele.</p>
+  </div>
+</section>
+
 <!-- ============ COTAS ============ -->
 <section class="section sec--dark sec--pb" id="cotas">
   <div class="container">
     <div class="section__head rv">
-      <span class="eyebrow eyebrow--light">Níveis de apoio</span>
+      <span class="eyebrow eyebrow--light">Categorias de patrocínio</span>
       <h2 class="display display--light">Escolha o tamanho<br>da sua <span style="color:var(--yellow)">presença</span></h2>
-      <p class="lead lead--light">Quatro níveis de apoio, do institucional ao master. As contrapartidas abaixo são a base da conversa — o pacote final é montado caso a caso com a Coordenação de Comunicação, inclusive em formato de apoio em produtos e serviços.</p>
+      <p class="lead lead--light">As quatro categorias e as faixas de valor são as do <strong>Edital de Chamamento Público nº 02/2026 – SMAD</strong> — e valem tanto para aporte financeiro quanto para bens, materiais e serviços avaliados pelo valor de mercado. As contrapartidas abaixo são a base da conversa.</p>
     </div>
 
     <div class="tiers">
       <article class="tier rv" style="--accent:var(--yellow)">
         <span class="tier__bar"></span>
-        <span class="tier__flag">Destaque</span>
-        <div class="tier__name">Master</div>
-        <div class="tier__sub">Cota principal · exclusiva</div>
+        <span class="tier__flag">Maior exposição</span>
+        <div class="tier__name">Diamante</div>
+        <div class="tier__sub">Presença em todos os pontos</div>
+        <div class="tier__val">Acima de R$ 10.000</div>
         <ul>
           <li>Marca em posição de destaque no Kit Atleta</li>
           <li>Naming de uma arena ou modalidade</li>
@@ -751,13 +845,14 @@ body{
           <li>Citação na locução dos jogos e na premiação</li>
           <li>Banners em todos os locais de competição</li>
         </ul>
-        <p class="tier__foot">Cota exclusiva — apenas um apoiador master por edição.</p>
+        <p class="tier__foot">Categoria de maior exposição. Patrocinadores da mesma categoria recebem tratamento isonômico, conforme o edital.</p>
       </article>
 
       <article class="tier rv" style="--accent:var(--orange)">
         <span class="tier__bar"></span>
         <div class="tier__name">Ouro</div>
         <div class="tier__sub">Alta exposição</div>
+        <div class="tier__val">R$ 5.000 a R$ 9.999</div>
         <ul>
           <li>Marca impressa no Kit Atleta</li>
           <li>Banners nos principais locais de competição</li>
@@ -765,34 +860,38 @@ body{
           <li>Logo no site oficial do JOGA</li>
           <li>Direito de uso da marca JOGA 2026 na comunicação da empresa</li>
           <li>Citação na locução dos jogos</li>
-          <li>Presença na cerimônia de premiação</li>
+          <li>Divulgação da marca durante as premiações</li>
         </ul>
-        <p class="tier__foot">Número limitado de cotas.</p>
+        <p class="tier__foot">Contrapartida mínima prevista no Anexo V do edital.</p>
       </article>
 
       <article class="tier rv" style="--accent:var(--green)">
         <span class="tier__bar"></span>
         <div class="tier__name">Prata</div>
         <div class="tier__sub">Exposição dirigida</div>
+        <div class="tier__val">R$ 2.000 a R$ 4.999</div>
         <ul>
+          <li>Divulgação institucional nos materiais do evento</li>
           <li>Banner em local de competição</li>
           <li>Logo no site oficial do JOGA</li>
-          <li>Marca nos materiais impressos do evento</li>
+          <li>Direito de uso da marca JOGA 2026 na comunicação da empresa</li>
           <li>Selo de empresa apoiadora para uso próprio</li>
         </ul>
-        <p class="tier__foot">Ideal para empresas de bairro e negócios locais.</p>
+        <p class="tier__foot">Faixa pensada para empresas de bairro e negócios locais.</p>
       </article>
 
       <article class="tier rv" style="--accent:var(--white)">
         <span class="tier__bar"></span>
-        <div class="tier__name">Apoio</div>
-        <div class="tier__sub">Produtos, serviços e permuta</div>
+        <div class="tier__name">Bronze</div>
+        <div class="tier__sub">Produtos, serviços e estrutura</div>
+        <div class="tier__val">Até R$ 1.999</div>
         <ul>
-          <li>Logo na área de apoiadores do site</li>
+          <li>Marca no ponto de distribuição do item patrocinado</li>
+          <li>Logo na área de apoiadores do site oficial do JOGA</li>
           <li>Certificado de empresa apoiadora do JOGA 2026</li>
           <li>Selo de apoiador para uso próprio</li>
         </ul>
-        <p class="tier__foot">Aberto a apoio em produtos, serviços, estrutura ou premiação.</p>
+        <p class="tier__foot">Aberto a apoio em produtos, materiais, estrutura, alimentação ou serviços.</p>
       </article>
     </div>
 
@@ -800,7 +899,7 @@ body{
       <strong>Sobre os canais oficiais:</strong> como órgão público, a Prefeitura de Guarapuava não veicula marcas de patrocinadores em seus perfis institucionais nas redes sociais. A exposição digital do apoiador se dá na área de apoiadores do site oficial do JOGA e no direito de uso da marca do evento na comunicação da própria empresa.
     </div>
     <p class="lead lead--light rv" style="margin-top:22px;font-size:15px">
-      <strong>Sobre valores:</strong> as cotas são negociadas diretamente com a organização, de acordo com o formato de apoio e as contrapartidas combinadas. Entre em contato para receber a proposta detalhada.
+      <strong>Como participar:</strong> a proposta é protocolada na Secretaria Municipal de Administração, no prazo do edital, com o formulário do Anexo I. Em apoio com bens ou serviços, informe o valor estimado de mercado — é ele que define a categoria. Fale com a organização antes de protocolar: a gente ajuda a montar a proposta.
     </p>
   </div>
 </section>
@@ -811,7 +910,7 @@ body{
     <div class="section__head rv" style="margin-bottom:0">
       <span class="eyebrow eyebrow--light">Ação social</span>
       <h2 class="display display--sm display--light">Arrecadação<br><span style="color:var(--yellow)">Solidária</span></h2>
-      <p class="lead lead--light">O JOGA 2026 vai além da competição. Durante os onze dias de jogos, a Arrecadação Solidária mobiliza servidores, equipes e público em torno da coleta de doações destinadas a entidades de Guarapuava. Empresas apoiadoras participam como parceiras da ação e têm sua marca vinculada ao resultado entregue à cidade.</p>
+      <p class="lead lead--light">O JOGA 2026 vai além da competição. Durante todo o período dos jogos, a Arrecadação Solidária mobiliza servidores, equipes e público em torno da coleta de doações destinadas a entidades de Guarapuava. Empresas apoiadoras participam como parceiras da ação e têm sua marca vinculada ao resultado entregue à cidade.</p>
     </div>
   </div>
 </section>
@@ -829,18 +928,22 @@ body{
         <div class="tl__k">Maio</div>
         <p class="tl__t">Definição do orçamento e do plano de mídias do JOGA 2026.</p>
       </div>
-      <div class="tl__i is-now">
+      <div class="tl__i">
         <div class="tl__k">Agosto</div>
-        <p class="tl__t">Regulamento e calendário de competições fechados. Abertura da captação de patrocínio.</p>
+        <p class="tl__t">Regulamento e calendário de competições fechados.</p>
+      </div>
+      <div class="tl__i is-now">
+        <div class="tl__k">Setembro</div>
+        <p class="tl__t">Chamamento Público nº 02/2026 aberto: é agora que as propostas de patrocínio são protocoladas.</p>
         <span class="tl__badge">Etapa atual</span>
       </div>
       <div class="tl__i">
-        <div class="tl__k">Setembro</div>
-        <p class="tl__t">Inscrições abertas, fechamento das cotas e produção dos materiais com as marcas apoiadoras.</p>
+        <div class="tl__k">Outubro</div>
+        <p class="tl__t">Assinatura dos termos e produção dos kits, banners e materiais já com as marcas apoiadoras.</p>
       </div>
       <div class="tl__i">
-        <div class="tl__k">14 a 24 de outubro</div>
-        <p class="tl__t">JOGA 2026 acontece: onze dias de competições, cerimônias e cobertura oficial.</p>
+        <div class="tl__k">26 de outubro a 07 de novembro</div>
+        <p class="tl__t">JOGA 2026 acontece: competições, cerimônias e cobertura oficial em toda a cidade.</p>
       </div>
     </div>
   </div>
@@ -851,7 +954,7 @@ body{
   <div class="container">
     <div class="section__head rv">
       <span class="eyebrow">23 modalidades em 7 blocos</span>
-      <h2 class="display display--sm">Onze dias, muitas<br><em class="ink ink--g">arenas diferentes</em></h2>
+      <h2 class="display display--sm">Uma cidade inteira<br><em class="ink ink--g">virando arena</em></h2>
       <p class="lead">Cada modalidade é um ponto de contato próprio, com público, local e horário distintos. Modalidades em destaque na 2ª edição:</p>
     </div>
     <div class="mods rv">
