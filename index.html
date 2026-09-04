@@ -324,11 +324,13 @@ body{
 .tier:hover{transform:translateY(-6px);border-color:var(--accent);background:rgba(255,255,255,.08)}
 .tier__bar{position:absolute;inset:0 0 auto 0;height:7px;background:var(--accent)}
 .tier__flag{
-  position:absolute;top:18px;right:18px;
+  align-self:flex-start;max-width:100%;
   background:var(--yellow);color:#1a1300;font-size:10px;font-weight:800;
   letter-spacing:.12em;padding:5px 11px;text-transform:uppercase;border-radius:999px;
+  margin-bottom:12px;
 }
-.tier__name{font-family:var(--fDisp);font-size:30px;text-transform:uppercase;line-height:1;margin:8px 0 4px;color:var(--accent)}
+.tier__flag--ghost{visibility:hidden}
+.tier__name{font-family:var(--fDisp);font-size:30px;text-transform:uppercase;line-height:1;margin:0 0 4px;color:var(--accent)}
 .tier__sub{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:600;margin-bottom:18px}
 .tier ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:20px;flex:1}
 .tier li{position:relative;padding-left:26px;font-size:14px;color:rgba(255,255,255,.9);line-height:1.45}
@@ -460,7 +462,7 @@ body{
   .tier li{font-size:7.6pt;padding-left:15px;line-height:1.26}
   .tier li::before{width:11px;height:11px;top:2px;-webkit-mask-size:9px;mask-size:9px}
   .tier__foot{font-size:7.6pt;padding-top:9px}
-  .tier__flag{position:static;display:inline-block;font-size:7.4pt;padding:3px 8px;margin-bottom:2px}
+  .tier__flag{font-size:7.4pt;padding:3px 8px;margin-bottom:7px}
   .cta{padding-bottom:18px}
 
   /* a secao de cotas cabe inteira numa folha */
@@ -894,6 +896,7 @@ body{
 
       <article class="tier rv" style="--accent:var(--orange)">
         <span class="tier__bar"></span>
+        <span class="tier__flag tier__flag--ghost" aria-hidden="true">—</span>
         <div class="tier__name">Ouro</div>
         <div class="tier__sub">Alta exposição</div>
         <div class="tier__val">R$ 5.000 a R$ 9.999</div>
@@ -915,6 +918,7 @@ body{
 
       <article class="tier rv" style="--accent:var(--green)">
         <span class="tier__bar"></span>
+        <span class="tier__flag tier__flag--ghost" aria-hidden="true">—</span>
         <div class="tier__name">Prata</div>
         <div class="tier__sub">Exposição dirigida</div>
         <div class="tier__val">R$ 2.000 a R$ 4.999</div>
@@ -933,6 +937,7 @@ body{
 
       <article class="tier rv" style="--accent:var(--white)">
         <span class="tier__bar"></span>
+        <span class="tier__flag tier__flag--ghost" aria-hidden="true">—</span>
         <div class="tier__name">Bronze</div>
         <div class="tier__sub">Porta de entrada</div>
         <div class="tier__val">Até R$ 1.999</div>
