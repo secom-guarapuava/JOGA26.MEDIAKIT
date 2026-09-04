@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JOGA 2026 — Media Kit · Patrocínio e Apoio</title>
+<meta name="description" content="Media kit oficial do JOGA 2026 — Jogos dos Servidores Municipais de Guarapuava. 26 de outubro a 07 de novembro de 2026. Cotas de apoio, alcance, público e oportunidades de exposição de marca.">
+<meta name="theme-color" content="#0b1030">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JOGA 2026 — Media Kit · Patrocínio e Apoio">
+<meta property="og:description" content="26 de outubro a 07 de novembro de 2026. 2.500 participantes previstos e 23 modalidades. Conheça as oportunidades de patrocínio do JOGA 2026.">
+<meta property="og:image" content="assets/logo_iso.png">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="assets/logo_mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bungee&family=Inter:wght@300;400;500;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   JOGA 2026 — MEDIA KIT
+   Jogos dos Servidores Municipais de Guarapuava
+   ============================================================ */
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{border:none;background:none;cursor:pointer;font:inherit;color:inherit}
+
+:root{
+  --orange:#E94E2C; --green:#4DAE3F; --blue:#1F4FB8; --yellow:#F2C30F;
+  --black:#0E0E0E;  --white:#FFFFFF;
+  --cream:#FBF6EC;  --ink:#0E0E0E;   --muted:#5b5b5b;  --line:rgba(0,0,0,.09);
+  --night:#0b1030;
+  --fDisp:'Anton','Archivo Black','Bebas Neue',Impact,sans-serif;
+  --fBody:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --fBung:'Bungee','Anton',sans-serif;
+  --fMark:'Permanent Marker',cursive;
+  --maxw:1280px;
+  --pad:clamp(20px,4vw,48px);
+}
+
+body{
+  font-family:var(--fBody);
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.55;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+/* ---------- Grain global (textura da marca — não remover) ---------- */
+.grain{
+  position:fixed;inset:0;pointer-events:none;z-index:9999;
+  opacity:.06;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='2'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 0'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>");
+}
+
+/* ---------- Helpers ---------- */
+.container{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad);width:100%}
+.section{padding:clamp(60px,8vw,116px) 0;position:relative}
+.section__head{max-width:860px;margin-bottom:clamp(32px,4vw,52px)}
+.eyebrow{
+  font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:12.5px;
+  color:var(--orange);display:flex;align-items:center;gap:10px;margin-bottom:14px;
+  line-height:1.5;max-width:60ch;
+}
+.eyebrow::before{content:"";flex:0 0 24px;height:2px;background:currentColor;align-self:center}
+.eyebrow--light{color:#fff}
+.display{
+  font-family:var(--fDisp);font-weight:400;
+  font-size:clamp(34px,5.4vw,72px);line-height:1.08;
+  letter-spacing:-.005em;text-transform:uppercase;color:var(--ink);
+}
+.display--sm{font-size:clamp(28px,3.8vw,48px)}
+.display--light{color:#fff}
+.lead{margin-top:18px;font-size:clamp(16px,1.4vw,19px);color:#222;max-width:64ch}
+.lead--light{color:rgba(255,255,255,.92)}
+
+/* marcador tipográfico */
+.ink{
+  display:inline;padding:.05em .22em;color:#fff;font-style:normal;
+  background-image:linear-gradient(var(--c),var(--c));
+  background-repeat:no-repeat;background-position:0 65%;background-size:100% 78%;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;border-radius:6px;
+}
+.ink--g{--c:var(--green)}
+.ink--b{--c:var(--blue)}
+.ink--o{--c:var(--orange)}
+.ink--y{--c:var(--yellow);color:#1a1300}
+
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 24px;border-radius:999px;font-weight:700;letter-spacing:.02em;font-size:15px;
+  transition:transform .25s ease,background .25s ease,color .25s ease,box-shadow .25s ease;
+  white-space:nowrap;
+}
+.btn--primary{background:#fff;color:#111;box-shadow:0 12px 24px rgba(0,0,0,.18)}
+.btn--primary:hover{background:var(--yellow);color:#111;transform:translateY(-3px)}
+.btn--ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+.btn--ghost:hover{background:#fff;color:#111;border-color:#fff;transform:translateY(-3px)}
+.btn--dark{background:var(--ink);color:#fff}
+.btn--dark:hover{background:var(--orange);transform:translateY(-3px)}
+.btn--big{padding:19px 30px;font-size:16px}
+
+/* placeholder a preencher */
+.fill{
+  display:inline-block;background:var(--yellow);
+  border-bottom:2px dashed rgba(233,78,44,.9);
+  padding:0 .4em;border-radius:4px;font-weight:800;color:#3a2a00;
+}
+
+/* ---------- NAV ---------- */
+.nav{
+  position:fixed;inset:0 0 auto 0;z-index:1000;padding:12px var(--pad);
+  background:rgba(11,16,48,.84);
+  backdrop-filter:saturate(1.2) blur(14px);-webkit-backdrop-filter:saturate(1.2) blur(14px);
+  border-bottom:1px solid rgba(255,255,255,.09);
+  transition:background .3s ease,transform .35s ease;
+}
+.nav.is-scrolled{background:rgba(9,12,34,.97)}
+.nav__inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.nav__brand{display:inline-flex;align-items:center;gap:12px;height:52px}
+.nav__brand img{height:52px;width:auto;transition:transform .25s ease}
+.nav__brand:hover img{transform:scale(1.06) rotate(-1.5deg)}
+.nav__tag{
+  font-family:var(--fBung);font-size:11px;letter-spacing:.12em;color:var(--yellow);
+  border:1px solid rgba(242,195,15,.5);border-radius:999px;padding:5px 10px;
+}
+.nav__links{display:flex;gap:24px;align-items:center}
+.nav__links a{font-size:14px;font-weight:600;color:rgba(255,255,255,.88);position:relative;padding:6px 0}
+.nav__links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--yellow);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.nav__links a:hover{color:var(--yellow)}
+.nav__links a:hover::after{transform:scaleX(1)}
+.nav__cta{display:inline-flex;align-items:center;gap:9px;background:#fff;color:#111;padding:11px 18px;border-radius:999px;font-weight:700;font-size:13.5px;transition:.25s ease}
+.nav__cta:hover{background:var(--yellow);transform:translateY(-2px)}
+.nav__burger{display:none;width:42px;height:42px;border-radius:10px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);padding:0 10px}
+.nav__burger span{display:block;height:2px;background:#fff;margin:6px 0;transition:transform .3s ease,opacity .2s ease}
+.nav__burger.is-open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.nav__burger.is-open span:nth-child(2){opacity:0}
+.nav__burger.is-open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.nav__mobile{display:none;flex-direction:column;gap:2px;padding:14px 0 6px;border-top:1px solid rgba(255,255,255,.12);margin-top:12px}
+.nav__mobile a{padding:13px 4px;font-weight:600;font-size:16px;color:rgba(255,255,255,.9);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav.is-open .nav__mobile{display:flex}
+@media(max-width:1080px){.nav__links,.nav__cta{display:none}.nav__burger{display:block}}
+@media(max-width:480px){.nav{padding:10px 16px}.nav__brand,.nav__brand img{height:44px}.nav__tag{display:none}}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;padding:150px 0 clamp(60px,7vw,96px);color:#fff;overflow:hidden;isolation:isolate;
+  background:
+    radial-gradient(1100px 700px at 84% 12%, rgba(242,195,15,.30) 0%, transparent 60%),
+    radial-gradient(1000px 760px at 8% 88%, rgba(233,78,44,.34) 0%, transparent 60%),
+    radial-gradient(1300px 860px at 50% 118%, rgba(31,79,184,.52) 0%, transparent 65%),
+    linear-gradient(152deg,#0b1030 0%,#131b3f 48%,#0d0d18 100%);
+}
+.hero::before{
+  content:"";position:absolute;inset:-20%;z-index:0;pointer-events:none;
+  background:repeating-linear-gradient(115deg,transparent 0 180px,rgba(242,195,15,.05) 180px 184px,transparent 184px 340px,rgba(255,255,255,.04) 340px 343px);
+  animation:sweep 14s linear infinite;
+}
+@keyframes sweep{from{transform:translateX(0)}to{transform:translateX(343px)}}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:1;opacity:.16;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='3' seed='3'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .35 0'/></filter><rect width='400' height='400' filter='url(%23n)'/></svg>");
+}
+.hero .container{position:relative;z-index:2}
+.hero__grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,4vw,64px);align-items:center}
+@media(max-width:940px){.hero__grid{grid-template-columns:1fr;gap:36px}}
+.hero__title{font-family:var(--fDisp);font-size:clamp(38px,6vw,80px);line-height:1.04;text-transform:uppercase;letter-spacing:-.01em}
+.hero__logo{position:relative}
+.hero__logo img{width:100%;max-width:520px;margin-left:auto;filter:drop-shadow(0 26px 44px rgba(0,0,0,.45))}
+@media(max-width:940px){.hero__logo img{margin:0 auto;max-width:380px}}
+.stamp{
+  position:absolute;right:-6px;top:-14px;width:120px;height:120px;
+  animation:spin 18s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:640px){.stamp{width:88px;height:88px;right:2px}}
+.hero__cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.hero__meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.chip{
+  font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:8px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.28);
+  background:rgba(255,255,255,.07);color:rgba(255,255,255,.92);
+}
+
+/* ---------- Fundos de seção (mesmo sistema do site) ---------- */
+.sec--white{background:#fff;position:relative}
+.sec--white::before{
+  content:"";position:absolute;left:0;right:0;top:0;height:5px;
+  background:linear-gradient(90deg,
+    var(--green) 0 16.66%, var(--blue) 16.66% 33.32%, var(--yellow) 33.32% 49.98%,
+    var(--orange) 49.98% 66.64%, var(--black) 66.64% 83.3%, #fff 83.3% 100%);
+}
+.sec--court{background:linear-gradient(180deg,#fff 0%,#f7f1e3 100%);position:relative}
+.sec--court::after{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600' fill='none' opacity='.05'><circle cx='400' cy='300' r='160' stroke='%230E0E0E' stroke-width='4'/><line x1='400' y1='0' x2='400' y2='600' stroke='%230E0E0E' stroke-width='4'/></svg>");
+  background-position:right -120px center;background-repeat:no-repeat;background-size:1100px;
+}
+.sec--court .container{position:relative;z-index:1}
+.sec--green{
+  background:linear-gradient(180deg,#0a1f0a 0%,#173a17 60%,#0a1f0a 100%);
+  color:#fff;position:relative;overflow:hidden;
+}
+.sec--green::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(900px 500px at 50% 0%, rgba(242,195,15,.22), transparent 60%),
+    radial-gradient(700px 400px at 10% 100%, rgba(233,78,44,.20), transparent 60%),
+    radial-gradient(500px 400px at 95% 50%, rgba(77,174,63,.22), transparent 60%);
+}
+.sec--green .container{position:relative;z-index:1}
+
+/* ---------- Faixa de cores ---------- */
+.band{display:flex;height:10px}
+.band i{flex:1}
+.band i:nth-child(1){background:var(--blue)}
+.band i:nth-child(2){background:var(--green)}
+.band i:nth-child(3){background:var(--yellow)}
+.band i:nth-child(4){background:#fff}
+.band i:nth-child(5){background:var(--black)}
+.band i:nth-child(6){background:var(--orange)}
+
+/* ---------- Marquee ---------- */
+.marquee{background:var(--black);color:#fff;overflow:hidden;padding:14px 0;white-space:nowrap}
+.marquee__track{display:inline-flex;gap:44px;animation:marq 26s linear infinite;will-change:transform}
+.marquee span{font-family:var(--fBung);font-size:15px;letter-spacing:.06em;color:#fff}
+.marquee span em{font-style:normal;color:var(--yellow)}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- Stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+@media(max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;transition:transform .25s ease,box-shadow .25s ease}
+.stat:hover{transform:translateY(-4px);box-shadow:0 18px 30px -20px rgba(0,0,0,.28)}
+.stat__num{font-family:var(--fDisp);font-size:clamp(38px,4.4vw,54px);line-height:1;color:var(--orange)}
+.stat--b .stat__num{color:var(--blue)}
+.stat--g .stat__num{color:var(--green)}
+.stat--k .stat__num{color:var(--ink)}
+.stat__lbl{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-top:8px;font-weight:600}
+.stat__note{font-size:12.5px;color:var(--muted);margin-top:8px;line-height:1.4}
+
+/* ---------- Cards genéricos ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:900px){.grid-3{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-5px);box-shadow:0 24px 40px -26px rgba(0,0,0,.35)}
+.card__bar{position:absolute;inset:0 0 auto 0;height:6px;background:var(--accent,var(--orange))}
+.card__n{font-family:var(--fDisp);font-size:34px;line-height:1;color:var(--accent,var(--orange));margin-bottom:12px}
+.card h3{font-family:var(--fDisp);font-size:22px;text-transform:uppercase;letter-spacing:.015em;margin-bottom:10px;line-height:1.18}
+.card p{font-size:15px;color:#333}
+
+/* ---------- Exposição / inventário ---------- */
+.expo{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:980px){.expo{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.expo{grid-template-columns:1fr}}
+.expo__item{
+  display:flex;gap:14px;align-items:flex-start;
+  background:#fff;border:1px solid var(--line);border-left:5px solid var(--accent,var(--blue));
+  border-radius:14px;padding:18px 18px 18px 16px;
+}
+.expo__item h4{font-size:15px;font-weight:800;margin-bottom:4px}
+.expo__item p{font-size:13.5px;color:var(--muted);line-height:1.45}
+.expo__ico{flex:0 0 34px;height:34px;border-radius:9px;background:var(--accent,var(--blue));display:grid;place-items:center;color:#fff}
+.expo__ico svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- Itens patrocinaveis ---------- */
+.kits{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:980px){.kits{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.kits{grid-template-columns:1fr}}
+.kit{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease}
+.kit:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(0,0,0,.10)}
+.kit__img{aspect-ratio:4/3;overflow:hidden;background:var(--cream)}
+.kit__img img{width:100%;height:100%;object-fit:cover;display:block}
+.kit__body{padding:16px 16px 18px;border-top:5px solid var(--accent,var(--orange))}
+.kit h4{font-family:var(--fDisp);font-size:20px;text-transform:uppercase;letter-spacing:.02em;margin-bottom:6px;color:var(--accent,var(--orange))}
+.kit p{font-size:13.5px;color:var(--muted);line-height:1.45}
+.needs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+@media(max-width:980px){.needs{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.needs{grid-template-columns:1fr}}
+.need{background:var(--cream);border:1px solid var(--line);border-left:5px solid var(--accent,var(--green));border-radius:14px;padding:16px 18px}
+.need h4{font-size:13.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.need p{font-size:13.5px;color:var(--muted);line-height:1.5}
+.tier__excl{background:rgba(255,255,255,.10);border:1px solid var(--accent);border-left:4px solid var(--accent);border-radius:12px;padding:11px 13px;margin-bottom:15px;font-size:13.5px;font-weight:700;color:#fff;line-height:1.35}
+.tier__excl-k{display:block;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--accent);margin-bottom:4px}
+.subhead{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:26px 0 12px;display:flex;align-items:center;gap:10px}
+.subhead::after{content:"";flex:1;height:1px;background:var(--line)}
+.subhead:first-child{margin-top:0}
+.deadline{display:flex;flex-wrap:wrap;align-items:center;gap:14px;background:var(--orange);color:#fff;border-radius:16px;padding:16px 20px;margin-top:22px}
+.deadline__k{font-family:var(--fDisp);font-size:23px;line-height:1;text-transform:uppercase;letter-spacing:.01em}
+.deadline__t{font-size:14px;font-weight:600;line-height:1.4;flex:1;min-width:220px}
+.tier__val{font-family:var(--fDisp);font-size:18px;letter-spacing:.01em;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);border-radius:999px;padding:5px 13px;display:inline-block;margin-bottom:16px}
+
+/* ---------- Cotas ---------- */
+.sec--dark{
+  background:linear-gradient(180deg,#14224d 0%,#1F4FB8 100%);
+  color:#fff;position:relative;overflow:hidden;
+}
+.sec--dark::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(900px 500px at 88% 10%, rgba(233,78,44,.28), transparent 60%),
+    radial-gradient(700px 500px at 10% 100%, rgba(77,174,63,.22), transparent 60%),
+    radial-gradient(500px 400px at 50% 50%, rgba(242,195,15,.10), transparent 60%);
+}
+.sec--dark::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.14;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='3' seed='7'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .35 0'/></filter><rect width='400' height='400' filter='url(%23n)'/></svg>");
+}
+.sec--dark .container{position:relative;z-index:2}
+.sec--dark .eyebrow{color:var(--yellow)}
+.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:stretch}
+@media(max-width:1080px){.tiers{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.tiers{grid-template-columns:1fr}}
+.tier{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.16);
+  border-radius:22px;padding:26px 22px;display:flex;flex-direction:column;position:relative;overflow:hidden;
+  transition:transform .25s ease,border-color .25s ease,background .25s ease;
+}
+.tier:hover{transform:translateY(-6px);border-color:var(--accent);background:rgba(255,255,255,.08)}
+.tier__bar{position:absolute;inset:0 0 auto 0;height:7px;background:var(--accent)}
+.tier__flag{
+  position:absolute;top:18px;right:18px;
+  background:var(--yellow);color:#1a1300;font-size:10px;font-weight:800;
+  letter-spacing:.12em;padding:5px 11px;text-transform:uppercase;border-radius:999px;
+}
+.tier__name{font-family:var(--fDisp);font-size:30px;text-transform:uppercase;line-height:1;margin:8px 0 4px;color:var(--accent)}
+.tier__sub{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:600;margin-bottom:18px}
+.tier ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:20px;flex:1}
+.tier li{position:relative;padding-left:26px;font-size:14px;color:rgba(255,255,255,.9);line-height:1.45}
+.tier li::before{content:"";position:absolute;left:0;top:2px;width:16px;height:16px;border-radius:5px;background:var(--accent);
+  -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M20 6 9 17l-5-5' fill='none' stroke='black' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/12px no-repeat;
+  mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M20 6 9 17l-5-5' fill='none' stroke='black' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/12px no-repeat;}
+.tier__foot{font-size:12.5px;color:rgba(255,255,255,.62);border-top:1px solid rgba(255,255,255,.16);padding-top:14px}
+.note{
+  margin-top:30px;background:rgba(0,0,0,.22);border:1px dashed rgba(255,255,255,.28);
+  border-radius:16px;padding:20px 22px;font-size:14.5px;color:rgba(255,255,255,.9);max-width:80ch;line-height:1.6;
+}
+.note strong{color:var(--yellow)}
+
+/* ---------- Timeline ---------- */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:8px}
+@media(max-width:900px){.tl{grid-template-columns:1fr}}
+.tl__i{position:relative;padding:26px 22px;background:#fff;border:1px solid var(--line);border-right:none}
+.tl__i:last-child{border-right:1px solid var(--line)}
+@media(max-width:900px){.tl__i{border-right:1px solid var(--line);border-bottom:none}.tl__i:last-child{border-bottom:1px solid var(--line)}}
+.tl__i.is-now{background:#fff;box-shadow:inset 0 4px 0 var(--orange)}
+.tl__k{font-family:var(--fDisp);font-size:20px;text-transform:uppercase;color:var(--blue)}
+.tl__i.is-now .tl__k{color:var(--orange)}
+.tl__t{font-size:14px;color:#333;margin-top:8px}
+.tl__badge{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;background:var(--orange);color:#fff;padding:4px 9px;border-radius:999px;margin-top:12px}
+
+/* ---------- Modalidades chips ---------- */
+.mods{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.mod{
+  font-weight:700;font-size:14px;padding:11px 17px;border-radius:999px;
+  background:#fff;border:1.5px solid var(--line);transition:.22s ease;
+}
+.mod:nth-child(5n+1){border-color:var(--blue);color:var(--blue)}
+.mod:nth-child(5n+2){border-color:var(--green);color:var(--green)}
+.mod:nth-child(5n+3){border-color:var(--yellow);color:#8a6d00}
+.mod:nth-child(5n+4){border-color:var(--orange);color:var(--orange)}
+.mod:nth-child(5n+5){border-color:var(--black);color:var(--black)}
+
+/* ---------- Público / personagens ---------- */
+.aud{display:grid;grid-template-columns:1fr .9fr;gap:clamp(28px,4vw,64px);align-items:center}
+@media(max-width:940px){.aud{grid-template-columns:1fr}}
+.chars{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.chars img{
+  width:100%;background:#fff;border:1px solid var(--line);border-radius:18px;padding:10px;
+  transition:transform .3s ease;
+}
+.chars img:nth-child(odd){transform:rotate(-2.2deg)}
+.chars img:nth-child(even){transform:rotate(2.2deg)}
+.chars img:hover{transform:scale(1.06) rotate(0deg)}
+.bullets{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:22px}
+.bullets li{position:relative;padding-left:24px;font-size:15.5px;color:#222;line-height:1.55}
+.bullets li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:10px;border-radius:50%;background:var(--green)}
+.bullets li:nth-child(2)::before{background:var(--blue)}
+.bullets li:nth-child(3)::before{background:var(--yellow)}
+.bullets li:nth-child(4)::before{background:var(--orange)}
+.bullets li:nth-child(5)::before{background:var(--black)}
+
+/* ---------- Social ---------- */
+.sec--green .eyebrow{color:var(--yellow)}
+.sec--green .display{color:#fff}
+
+/* ---------- CTA final ---------- */
+.cta{
+  position:relative;overflow:hidden;color:#fff;
+  background:
+    radial-gradient(1100px 700px at 86% -6%, rgba(242,195,15,.32) 0%, transparent 60%),
+    radial-gradient(1000px 760px at 6% 96%, rgba(233,78,44,.36) 0%, transparent 60%),
+    radial-gradient(1300px 860px at 50% 118%, rgba(31,79,184,.55) 0%, transparent 65%),
+    linear-gradient(152deg,#0b1030 0%,#131b3f 48%,#0d0d18 100%);
+}
+.cta::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='3' seed='5'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .3 0'/></filter><rect width='400' height='400' filter='url(%23n)'/></svg>");
+}
+.cta .container{position:relative;z-index:1}
+.cta .eyebrow{color:var(--yellow)}
+.contact{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}
+@media(max-width:760px){.contact{grid-template-columns:1fr}}
+.contact__c{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:24px}
+.contact__r{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);font-weight:700}
+.contact__n{font-family:var(--fDisp);font-size:22px;text-transform:uppercase;margin-top:8px;line-height:1.15}
+.contact__d{font-size:14px;color:rgba(255,255,255,.78);margin-top:10px;line-height:1.6}
+
+/* ---------- Footer ---------- */
+.footer{
+  background:
+    radial-gradient(700px 400px at 90% 0%, rgba(233,78,44,.22), transparent 60%),
+    radial-gradient(500px 300px at 0% 100%, rgba(31,79,184,.28), transparent 60%),
+    linear-gradient(180deg,#161616 0%,#0E0E0E 100%);
+  color:rgba(255,255,255,.62);padding:48px 0 30px;font-size:13px;line-height:1.7;
+}
+.footer__top{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:24px}
+.footer img{height:46px;width:auto}
+.footer a{color:var(--yellow)}
+.footer__cred{max-width:92ch}
+
+/* ---------- Reveal ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.is-in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .marquee__track,.hero::before,.stamp{animation:none}
+}
+
+/* ---------- PRINT / PDF A4 ---------- */
+@media print{
+  @page{size:A4;margin:12mm}
+  .nav,.grain,.marquee,.btn,.stamp{display:none!important}
+  body{background:#fff;font-size:10.5pt;line-height:1.4}
+  .hero{padding:0 0 18px;color:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  .section{padding:16px 0;break-inside:avoid}
+  .card,.tier,.stat,.expo__item,.tl__i{break-inside:avoid;box-shadow:none}
+  .sec--pb{break-before:page}
+  .display{font-size:22pt}
+  .hero__title{font-size:26pt}
+  .lead{font-size:10.5pt}
+  a[href]::after{content:""}
+
+  /* capa ocupando a folha inteira */
+  .hero{min-height:246mm;display:flex;align-items:center}
+  .hero__grid{width:100%}
+
+  /* as quatro cotas cabem lado a lado numa folha */
+  .tiers{grid-template-columns:repeat(4,1fr);gap:7px}
+  .tier{padding:14px 11px;border-radius:12px}
+  .tier__name{font-size:19px;margin:6px 0 3px}
+  .tier__sub{font-size:8pt;letter-spacing:.06em;margin-bottom:10px}
+  .tier ul{gap:5px;margin-bottom:10px}
+  .tier li{font-size:7.6pt;padding-left:15px;line-height:1.26}
+  .tier li::before{width:11px;height:11px;top:2px;-webkit-mask-size:9px;mask-size:9px}
+  .tier__foot{font-size:7.6pt;padding-top:9px}
+  .tier__flag{position:static;display:inline-block;font-size:7.4pt;padding:3px 8px;margin-bottom:2px}
+  .cta{padding-bottom:18px}
+
+  /* a secao de cotas cabe inteira numa folha */
+  .sec--dark .section__head{margin-bottom:13px}
+  .sec--dark p.lead{font-size:8.8pt!important;margin-top:11px!important}
+  .note{break-inside:avoid;margin-top:11px;padding:10px 14px;font-size:8.3pt;line-height:1.4;border-radius:10px}
+  #cotas{break-inside:avoid}
+  #itens{break-before:page}
+
+  .kits{grid-template-columns:repeat(2,1fr);gap:9px}
+  .kit__img{aspect-ratio:2/1}
+  .kit,.need{break-inside:avoid}
+  .kit__body{padding:10px 12px 11px;border-top-width:3px}
+  .kit h4{font-size:15px;margin-bottom:3px}
+  .kit p{font-size:8.3pt;line-height:1.32}
+  .needs{grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+  #itens{break-inside:avoid}
+  .subhead{break-after:avoid;break-inside:avoid}
+  .sec--green{break-before:avoid;break-after:avoid}
+  .expo{gap:8px}
+  .expo__item{padding:11px 12px 11px 10px;border-radius:10px}
+  .expo__item h4{font-size:10pt;margin-bottom:2px}
+  .expo__item p{font-size:8.2pt;line-height:1.32}
+  .expo__ico{flex:0 0 24px;height:24px;border-radius:7px}
+  .expo__ico svg{width:14px;height:14px}
+  .need{padding:9px 11px}
+  .need h4{font-size:9.6pt}
+  .need p{font-size:9pt}
+  .tier__val{font-size:9pt;padding:2px 8px;margin-bottom:8px}
+  .tier__excl{padding:8px 10px;margin-bottom:9px;font-size:8.2pt;border-radius:9px;line-height:1.3}
+  .tier__excl-k{font-size:6.6pt;letter-spacing:.1em;margin-bottom:2px}
+  .subhead{margin:14px 0 8px;font-size:8.4pt}
+  .deadline{margin-top:12px;padding:11px 14px;gap:10px;border-radius:11px;break-inside:avoid}
+  .deadline__k{font-size:15px}
+  .deadline__t{font-size:8.6pt}
+
+  /* rodape nao abre folha nova sozinho */
+  .footer{break-before:avoid;padding:22px 0 16px}
+  .footer__top{margin-bottom:14px}
+  .marquee{display:none!important}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html" aria-label="JOGA 2026 — site oficial">
+      <img src="assets/logo_mark.png" alt="JOGA 2026">
+      <span class="nav__tag">MEDIA KIT</span>
+    </a>
+    <nav class="nav__links" aria-label="Navegação do media kit">
+      <a href="#evento">O evento</a>
+      <a href="#alcance">Alcance</a>
+      <a href="#publico">Público</a>
+      <a href="#porque">Por que apoiar</a>
+      <a href="#exposicao">Exposição</a>
+      <a href="#itens">Itens</a>
+      <a href="#cotas">Cotas</a>
+      <a href="#cronograma">Prazos</a>
+      <a href="index.html">Site oficial</a>
+    </nav>
+    <a class="nav__cta" href="#contato">Quero apoiar
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <button class="nav__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__mobile" id="navMobile">
+      <a href="#evento">O evento</a>
+      <a href="#alcance">Alcance</a>
+      <a href="#publico">Público</a>
+      <a href="#porque">Por que apoiar</a>
+      <a href="#exposicao">Exposição</a>
+      <a href="#itens">Itens</a>
+      <a href="#cotas">Cotas</a>
+      <a href="#cronograma">Prazos</a>
+      <a href="#contato">Quero apoiar →</a>
+      <a href="index.html">Site oficial</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div>
+        <span class="eyebrow eyebrow--light">Media kit · Patrocínio e apoio</span>
+        <h1 class="hero__title">Coloque sua marca<br>ao lado de quem<br><span style="color:var(--yellow)">move a cidade</span></h1>
+        <p class="lead lead--light">O <strong>JOGA 2026 — Jogos dos Servidores Municipais de Guarapuava</strong> reúne mais de dois mil servidores de todas as secretarias em competições, integração e celebração de 26 de outubro a 07 de novembro. Este é o convite para a sua empresa participar dessa história.</p>
+        <div class="hero__meta">
+          <span class="chip" style="border-color:var(--yellow);color:var(--yellow)">26 de outubro a 07 de novembro de 2026</span>
+          <span class="chip">23 modalidades</span>
+          <span class="chip">6 equipes</span>
+          <span class="chip">2ª edição</span>
+          <span class="chip" style="border-color:var(--orange);color:var(--orange)">Propostas até 25.09</span>
+        </div>
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--big" href="#cotas">Ver cotas de apoio</a>
+          <a class="btn btn--ghost btn--big" href="#contato">Falar com a organização</a>
+        </div>
+      </div>
+      <div class="hero__logo">
+        <svg class="stamp" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#F2C30F" stroke-width="2" stroke-dasharray="4 6"/>
+          <text fill="#F2C30F" font-family="Inter,sans-serif" font-size="11.5" font-weight="800" letter-spacing="3.2">
+            <textPath href="#circ" startOffset="0">MEDIA KIT · JOGA 2026 · GUARAPUAVA · </textPath>
+          </text>
+        </svg>
+        <img src="assets/logo_iso.png" alt="Logotipo JOGA 2026">
+      </div>
+    </div>
+  </div>
+</section>
+<div class="band" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track" id="marq"></div>
+</div>
+
+<!-- ============ O EVENTO ============ -->
+<section class="section" id="evento">
+  <div class="container">
+    <div class="section__head rv">
+      <span class="eyebrow">O que é o JOGA</span>
+      <h2 class="display">Um programa da cidade<br>para quem <em class="ink ink--g">faz a cidade</em></h2>
+      <p class="lead">O JOGA é o programa esportivo oficial da Prefeitura de Guarapuava voltado aos servidores municipais. Nasceu para promover saúde, qualidade de vida e integração entre as secretarias — e virou, em uma única edição, um dos eventos mais aguardados do calendário interno do município.</p>
+      <p class="lead">Em 2026 o programa chega à sua segunda edição, maior em todos os sentidos: mais modalidades, mais dias de competição e a expectativa de dobrar o número de participantes. A realização é da Prefeitura Municipal de Guarapuava, com coordenação compartilhada entre as secretarias de Administração, Comunicação, Cultura, Turismo e Esporte.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card rv" style="--accent:var(--blue)">
+        <span class="card__bar"></span>
+        <div class="card__n">01</div>
+        <h3>Saúde e bem-estar</h3>
+        <p>Estimula a prática esportiva regular e o cuidado com a saúde física e mental de mais de dois mil trabalhadores do município ao longo de todo o ano.</p>
+      </article>
+      <article class="card rv" style="--accent:var(--green)">
+        <span class="card__bar"></span>
+        <div class="card__n">02</div>
+        <h3>Integração institucional</h3>
+        <p>Aproxima secretarias que raramente se encontram no dia a dia. Seis equipes mistas, formadas por servidores de diferentes áreas, disputam juntas.</p>
+      </article>
+      <article class="card rv" style="--accent:var(--orange)">
+        <span class="card__bar"></span>
+        <div class="card__n">03</div>
+        <h3>Pertencimento e orgulho</h3>
+        <p>Reforça o vínculo do servidor com a instituição e com Guarapuava. O JOGA é celebração pública do trabalho de quem atende a população todo dia.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ALCANCE ============ -->
+<section class="section sec--white" id="alcance">
+  <div class="container">
+    <div class="section__head rv">
+      <span class="eyebrow">Alcance e escala</span>
+      <h2 class="display">Os números da <em class="ink ink--b">2ª edição</em></h2>
+      <p class="lead">Dados oficiais do plano de trabalho do JOGA 2026. Os valores de 2025 são realizados; os de 2026 são a previsão aprovada pela coordenação geral.</p>
+    </div>
+
+    <div class="stats rv">
+      <div class="stat">
+        <div class="stat__num">2.500</div>
+        <div class="stat__lbl">Participantes previstos</div>
+        <p class="stat__note">Servidores inscritos nas modalidades em 2026</p>
+      </div>
+      <div class="stat stat--b">
+        <div class="stat__num">1.431</div>
+        <div class="stat__lbl">Participantes em 2025</div>
+        <p class="stat__note">Números realizados da 1ª edição</p>
+      </div>
+      <div class="stat stat--g">
+        <div class="stat__num">+75%</div>
+        <div class="stat__lbl">Crescimento projetado</div>
+        <p class="stat__note">De 2025 para 2026, em participação</p>
+      </div>
+      <div class="stat stat--k">
+        <div class="stat__num">23</div>
+        <div class="stat__lbl">Modalidades</div>
+        <p class="stat__note">Distribuídas em 7 blocos de competição</p>
+      </div>
+    </div>
+
+    <div class="stats rv" style="margin-top:16px;grid-template-columns:repeat(3,1fr)">
+      <div class="stat stat--b">
+        <div class="stat__num">11</div>
+        <div class="stat__lbl">Pontos de contato de marca</div>
+        <p class="stat__note">Previstos no edital — inventário completo abaixo</p>
+      </div>
+      <div class="stat stat--g">
+        <div class="stat__num">6</div>
+        <div class="stat__lbl">Equipes</div>
+        <p class="stat__note">Azul, Verde, Amarelo, Branco, Preto e Laranja</p>
+      </div>
+      <div class="stat stat--k">
+        <div class="stat__num">7</div>
+        <div class="stat__lbl">Blocos de competição</div>
+        <p class="stat__note">Agrupamento das 23 modalidades ao longo de todo o período de competição</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PÚBLICO ============ -->
+<section class="section sec--court" id="publico">
+  <div class="container">
+    <div class="aud">
+      <div class="rv">
+        <span class="eyebrow">Quem sua marca alcança</span>
+        <h2 class="display display--sm">Um público adulto,<br>estável e <em class="ink ink--o">enraizado na cidade</em></h2>
+        <p class="lead">O servidor municipal é um dos públicos mais consistentes de Guarapuava: renda previsível, vínculo empregatício estável e vida enraizada no município. Ele consome, decide e influencia localmente — e leva a família junto para o evento.</p>
+        <ul class="bullets">
+          <li><strong>Servidores de todas as secretarias</strong> — educação, saúde, obras, administração, cultura, meio ambiente, assistência social e mais.</li>
+          <li><strong>Famílias na arquibancada</strong> — cônjuges, filhos e amigos acompanham as competições ao longo de todo o período de competição.</li>
+          <li><strong>Renda estável e poder de compra local</strong> — público economicamente ativo que compra, contrata e recomenda dentro de Guarapuava.</li>
+          <li><strong>Multiplicadores naturais</strong> — servidores atendem a população diariamente e circulam por todos os bairros da cidade.</li>
+          <li><strong>Público concentrado no período dos jogos</strong> — as competições se distribuem por arenas e ginásios da cidade, com fluxo constante de servidores e acompanhantes.</li>
+        </ul>
+      </div>
+      <div class="chars rv">
+        <img src="assets/personagem_2.png" alt="">
+        <img src="assets/personagem_3.png" alt="">
+        <img src="assets/personagem_4.png" alt="">
+        <img src="assets/personagem_6.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POR QUE APOIAR ============ -->
+<section class="section sec--white sec--pb" id="porque">
+  <div class="container">
+    <div class="section__head rv">
+      <span class="eyebrow">Por que apoiar</span>
+      <h2 class="display">Quatro razões para<br>estar <em class="ink ink--y">dentro do jogo</em></h2>
+    </div>
+    <div class="grid-2">
+      <article class="card rv" style="--accent:var(--orange)">
+        <span class="card__bar"></span>
+        <div class="card__n">01</div>
+        <h3>Visibilidade contínua, não pontual</h3>
+        <p>Não é um dia de evento: o JOGA ocupa o calendário da cidade de 26 de outubro a 07 de novembro, com presença da marca nas arenas, no site oficial, no Instagram do evento e na locução das partidas. A exposição se estende por semanas.</p>
+      </article>
+      <article class="card rv" style="--accent:var(--blue)">
+        <span class="card__bar"></span>
+        <div class="card__n">02</div>
+        <h3>Associação com uma causa pública</h3>
+        <p>Apoiar o JOGA é associar a marca a saúde, esporte, integração e valorização do servidor público. É um posicionamento positivo e apartidário, ligado ao cuidado com quem trabalha pela cidade.</p>
+      </article>
+      <article class="card rv" style="--accent:var(--green)">
+        <span class="card__bar"></span>
+        <div class="card__n">03</div>
+        <h3>Impacto social real</h3>
+        <p>O JOGA 2026 inclui a <strong>Arrecadação Solidária</strong>, ação de coleta de doações que reverte para entidades da cidade. Sua empresa entra como parceira de um resultado concreto para Guarapuava.</p>
+      </article>
+      <article class="card rv" style="--accent:var(--yellow)">
+        <span class="card__bar"></span>
+        <div class="card__n">04</div>
+        <h3>Direito de uso da marca JOGA</h3>
+        <p>A empresa apoiadora recebe o certificado e o selo digital de apoiadora, e nas cotas Ouro e Diamante pode usar a marca do JOGA 2026 na própria comunicação — site, vitrine, redes e materiais internos.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPOSIÇÃO ============ -->
+<section class="section" id="exposicao">
+  <div class="container">
+    <div class="section__head rv">
+      <span class="eyebrow">Inventário de exposição</span>
+      <h2 class="display">Onde a sua marca<br><em class="ink ink--b">aparece</em></h2>
+      <p class="lead">Todos os pontos de contato previstos no Edital de Chamamento Público nº 02/2026 – SMAD. Os oito primeiros são contrapartidas da categoria; a exposição física é distribuída pela Secretaria de Administração em conjunto com a Secretaria de Comunicação, com tratamento isonômico entre patrocinadores da mesma categoria.</p>
+    </div>
+
+    <h3 class="subhead rv">Contrapartidas da categoria · Anexo V</h3>
+    <div class="expo">
+      <div class="expo__item rv" style="--accent:var(--yellow)">
+        <span class="expo__ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6.1L12 16.8 6.6 19.7l1.2-6.1L3.3 9.4l6.1-.8z"/></svg></span>
+        <div><h4>Naming de arena ou modalidade</h4><p>Uma arena ou uma modalidade inteira passa a levar o nome da empresa. Exclusivo da cota Diamante.</p></div>
+      </div>
+      <div class="expo__item rv" style="--accent:var(--orange)">
+        <span class="expo__ico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span>
+        <div><h4>Instagram oficial do JOGA</h4><p>Divulgação da empresa como apoiadora no <strong>@joga2025prefes</strong>, o perfil oficial dos Jogos.</p></div>
+      </div>
+      <div class="expo__item rv" style="--accent:var(--blue)">
+        <span class="expo__ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg></span>
+        <div><h4>Site oficial do JOGA</h4><p>Logo do patrocinador em destaque no site oficial, ativo durante toda a temporada do evento.</p></div>
+      </div>
+      <div class="expo__item rv" style="--accent:var(--green)">
+        <span class="expo__ico"><svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg></span>
+        <div><h4>Ativação presencial</h4><p>Estande, tenda ou ponto de experiência da marca nos locais de competição, com contato direto com o público.</p></div>
+      </div>
+      <div class="expo__item rv" style="--accent:var(--orange)">
+        <span class="expo__ico"><svg viewBox="0 0 24 24"><path d="M3 11v2a9 9 0 0 0 18 0v-2"/><rect x="9" y="2" width="6" height="12" rx="3"/></svg></span>
+        <div><h4>Locução nos jogos</h4><p>Citação da marca nas chamadas e anúncios feitos durante as partidas.</p></div>
+      </div>
+      <div class="expo__item rv" style="--accent:var(--green)">
+        <span class="expo__ico"><svg viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3M9 20h6M12 14v6"/></svg></span>
+        <div><h4>Premiação</h4><p>Citação da marca na cerimônia de premiação, na entrega de troféus e medalhas.</p></div>
+      </div>
+      <div class="expo__item rv" style="--accent:var(--black)">
+        <span class="expo__ico"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4z"/><path d="M8 11h8M8 14h5"/></svg></span>
+        <div><h4>Uso da marca JOGA 2026</h4><p>Direito de usar a marca do evento na comunicação da própria empresa — site, vitrine, redes e materiais internos.</p></div>
+      </div>
+      <div class="expo__item rv" style="--accent:var(--blue)">
+        <span class="expo__ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5L7 21l5-2.5L17 21l-1.5-7.5"/></svg></span>
+        <div><h4>Selo e certificado de apoiador</h4><p>Selo digital de empresa apoiadora para uso próprio e certificado oficial de apoiadora do JOGA 2026.</p></div>
+      </div>
+    </div>
+
+    <h3 class="subhead rv">Exposição física · definida pela SMAD com a SECOM</h3>
+    <div class="expo">
+      <div class="expo__item rv" style="--accent:var(--green)">
+        <span class="expo__ico"><svg viewBox="0 0 24 24"><path d="M4 4v16"/><path d="M4 5h13l-2 4 2 4H4"/></svg></span>
+        <div><h4>Banners e faixas</h4><p>Logomarca em banners e faixas nos locais de competição das 23 modalidades.</p></div>
+      </div>
+      <div class="expo__item rv" style="--accent:var(--blue)">
+        <span class="expo__ico"><svg viewBox="0 0 24 24"><path d="M3 5h18v11H3z"/><path d="M8 21h8M12 16v5"/></svg></span>
+        <div><h4>Backdrops</h4><p>Logomarca no fundo de imagem das entrevistas e fotos oficiais — o painel mais fotografado do evento.</p></div>
+      </div>
+      <div class="expo__item rv" style="--accent:var(--orange)">
+        <span class="expo__ico"><svg viewBox="0 0 24 24"><path d="M12 3v6M7 6l2 4M17 6l-2 4"/><rect x="4" y="10" width="16" height="10" rx="3"/></svg></span>
+        <div><h4>Cerimônias</h4><p>Divulgação durante as cerimônias de abertura e encerramento, diante de todos os participantes reunidos.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ITENS PATROCINAVEIS ============ -->
+<section class="section sec--white" id="itens">
+  <div class="container">
+    <div class="section__head rv">
+      <span class="eyebrow">O que dá para patrocinar</span>
+      <h2 class="display">Sua marca vai<br>pra <em class="ink ink--o">mão do atleta</em></h2>
+      <p class="lead">O apoio pode ser em recurso financeiro ou em bens, materiais e serviços. Estes são os itens que o JOGA 2026 precisa, conforme o Anexo IV do edital — e o valor estimado de mercado do que você oferecer é o que define a sua categoria.</p>
+    </div>
+
+    <div class="kits rv">
+      <article class="kit" style="--accent:var(--blue)">
+        <div class="kit__img"><img src="assets/mk-sacochila.jpg" alt="Sacochila do JOGA 2026"></div>
+        <div class="kit__body">
+          <h4>Sacochila</h4>
+          <p>Entregue a cada participante inscrito. Sai do ginásio nas costas do atleta e continua circulando pela cidade meses depois do evento.</p>
+        </div>
+      </article>
+      <article class="kit" style="--accent:var(--orange)">
+        <div class="kit__img"><img src="assets/mk-squeeze.jpg" alt="Squeeze do JOGA 2026"></div>
+        <div class="kit__body">
+          <h4>Squeeze</h4>
+          <p>Fica na quadra, na mesa de trabalho e na academia. É o item do kit com maior tempo de uso por participante.</p>
+        </div>
+      </article>
+      <article class="kit" style="--accent:var(--yellow)">
+        <div class="kit__img"><img src="assets/mk-bottons.jpg" alt="Bottons do JOGA 2026"></div>
+        <div class="kit__body">
+          <h4>Bottons</h4>
+          <p>Colecionáveis por modalidade e por equipe. Custo baixo de produção e adesão alta — vão parar no crachá e na mochila.</p>
+        </div>
+      </article>
+      <article class="kit" style="--accent:var(--green)">
+        <div class="kit__img"><img src="assets/mk-adesivos.jpg" alt="Adesivos #APOIADOR do JOGA 2026"></div>
+        <div class="kit__body">
+          <h4>Adesivos</h4>
+          <p>Versão impressa do selo <strong>#APOIADOR</strong> — o mesmo selo digital previsto na contrapartida, para a empresa usar na vitrine, no balcão e no carro.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="needs rv">
+      <div class="need" style="--accent:var(--orange)">
+        <h4>Competição</h4>
+        <p>Medalhas · Troféus · Arbitragem · Sonorização e estruturas · Locação de espaços</p>
+      </div>
+      <div class="need" style="--accent:var(--blue)">
+        <h4>Atleta em quadra</h4>
+        <p>Água mineral · Isotônicos · Frutas · Camisetas e coletes</p>
+      </div>
+      <div class="need" style="--accent:var(--yellow)">
+        <h4>Premiação</h4>
+        <p>Bens, produtos, brindes e vouchers · Premiação em pecúnia</p>
+      </div>
+      <div class="need" style="--accent:var(--green)">
+        <h4>Outros</h4>
+        <p>Demais itens e serviços relacionados à realização do evento</p>
+      </div>
+    </div>
+
+    <p class="lead rv" style="font-size:14.5px;margin-top:18px">A proposta pode cobrir um item inteiro ou uma parte dele, e cada interessado pode apresentar mais de uma proposta. Quando o apoio for em bens ou serviços, informe o valor estimado de mercado — a Comissão pode pedir documentos que comprovem esse valor.</p>
+  </div>
+</section>
+
+<!-- ============ COTAS ============ -->
+<section class="section sec--dark sec--pb" id="cotas">
+  <div class="container">
+    <div class="section__head rv">
+      <span class="eyebrow eyebrow--light">Categorias de patrocínio</span>
+      <h2 class="display display--light">Escolha o tamanho<br>da sua <span style="color:var(--yellow)">presença</span></h2>
+      <p class="lead lead--light">Categorias, faixas de valor e contrapartidas são exatamente as do <strong>Anexo V do Edital de Chamamento Público nº 02/2026 – SMAD</strong>. O enquadramento vale para aporte financeiro e para bens, materiais e serviços avaliados pelo valor de mercado.</p>
+    </div>
+
+    <div class="tiers">
+      <article class="tier rv" style="--accent:var(--yellow)">
+        <span class="tier__bar"></span>
+        <span class="tier__flag">Naming do evento</span>
+        <div class="tier__name">Diamante</div>
+        <div class="tier__sub">Presença máxima</div>
+        <div class="tier__val">Acima de R$ 10.000</div>
+        <div class="tier__excl">
+          <span class="tier__excl-k">Só no Diamante</span>
+          O naming da arena ou da modalidade — nenhuma outra cota tem
+        </div>
+        <ul>
+          <li>Naming de uma arena ou modalidade</li>
+          <li>Divulgação no Instagram oficial do JOGA como apoiador do evento</li>
+          <li>Espaço para ativação presencial no evento</li>
+          <li>Logo em destaque no site oficial do JOGA</li>
+          <li>Direito de uso da marca JOGA 2026 na comunicação da empresa</li>
+          <li>Citação na locução dos jogos e na premiação</li>
+          <li>Selo digital de empresa apoiadora para uso próprio</li>
+          <li>Certificado de empresa apoiadora do JOGA 2026</li>
+        </ul>
+        <p class="tier__foot">Patrocinadores da mesma categoria recebem tratamento isonômico, conforme o edital.</p>
+      </article>
+
+      <article class="tier rv" style="--accent:var(--orange)">
+        <span class="tier__bar"></span>
+        <div class="tier__name">Ouro</div>
+        <div class="tier__sub">Alta exposição</div>
+        <div class="tier__val">R$ 5.000 a R$ 9.999</div>
+        <div class="tier__excl">
+          <span class="tier__excl-k">Só até o Ouro</span>
+          Ativação presencial, uso da marca JOGA 2026 e selo digital param nesta cota
+        </div>
+        <ul>
+          <li>Divulgação no Instagram oficial do JOGA como apoiador do evento</li>
+          <li>Espaço para ativação presencial no evento</li>
+          <li>Logo em destaque no site oficial do JOGA</li>
+          <li>Direito de uso da marca JOGA 2026 na comunicação da empresa</li>
+          <li>Citação na locução dos jogos e na premiação</li>
+          <li>Selo digital de empresa apoiadora para uso próprio</li>
+          <li>Certificado de empresa apoiadora do JOGA 2026</li>
+        </ul>
+        <p class="tier__foot">Tudo o que o Diamante tem, menos o naming da arena.</p>
+      </article>
+
+      <article class="tier rv" style="--accent:var(--green)">
+        <span class="tier__bar"></span>
+        <div class="tier__name">Prata</div>
+        <div class="tier__sub">Exposição dirigida</div>
+        <div class="tier__val">R$ 2.000 a R$ 4.999</div>
+        <div class="tier__excl">
+          <span class="tier__excl-k">Só até a Prata</span>
+          O Instagram oficial do JOGA vai até esta cota
+        </div>
+        <ul>
+          <li>Divulgação no Instagram oficial do JOGA como apoiador do evento</li>
+          <li>Logo em destaque no site oficial do JOGA</li>
+          <li>Citação na locução dos jogos e na premiação</li>
+          <li>Certificado de empresa apoiadora do JOGA 2026</li>
+        </ul>
+        <p class="tier__foot">A menor faixa que ainda leva a marca para o Instagram do evento.</p>
+      </article>
+
+      <article class="tier rv" style="--accent:var(--white)">
+        <span class="tier__bar"></span>
+        <div class="tier__name">Bronze</div>
+        <div class="tier__sub">Porta de entrada</div>
+        <div class="tier__val">Até R$ 1.999</div>
+        <div class="tier__excl">
+          <span class="tier__excl-k">Em todas as cotas</span>
+          A base que todo apoiador leva, seja qual for o valor
+        </div>
+        <ul>
+          <li>Logo em destaque no site oficial do JOGA</li>
+          <li>Citação na locução dos jogos e na premiação</li>
+          <li>Certificado de empresa apoiadora do JOGA 2026</li>
+        </ul>
+        <p class="tier__foot">Aberto a apoio em produtos, materiais, estrutura, alimentação ou serviços.</p>
+      </article>
+    </div>
+
+    <div class="note rv">
+      <strong>Sobre os canais:</strong> a divulgação digital do apoiador acontece no site oficial do JOGA e no <strong>@joga2025prefes</strong>, o Instagram oficial dos Jogos. Os perfis institucionais da Prefeitura de Guarapuava não veiculam marcas de patrocinadores.
+    </div>
+
+    <div class="deadline rv">
+      <span class="deadline__k">Propostas até 25.09</span>
+      <span class="deadline__t">O prazo do Chamamento Público nº 02/2026 – SMAD vai de 09 a 25 de setembro de 2026. Depois disso, não há como entrar nesta edição.</span>
+      <a class="btn btn--primary" href="#contato">Falar com a organização</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AÇÃO SOCIAL ============ -->
+<section class="section sec--green" id="social">
+  <div class="container">
+    <div class="section__head rv" style="margin-bottom:0">
+      <span class="eyebrow eyebrow--light">Ação social</span>
+      <h2 class="display display--sm display--light">Arrecadação<br><span style="color:var(--yellow)">Solidária</span></h2>
+      <p class="lead lead--light">O JOGA 2026 vai além da competição. Durante todo o período dos jogos, a Arrecadação Solidária mobiliza servidores, equipes e público em torno da coleta de doações destinadas a entidades de Guarapuava. Empresas apoiadoras participam como parceiras da ação e entram na história que o JOGA entrega para a cidade.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CRONOGRAMA ============ -->
+<section class="section" id="cronograma">
+  <div class="container">
+    <div class="section__head rv">
+      <span class="eyebrow">Cronograma oficial</span>
+      <h2 class="display display--sm">Onde estamos e<br>até quando <em class="ink ink--o">dá tempo</em></h2>
+      <p class="lead">As datas são as do Anexo I do Edital de Chamamento Público nº 02/2026 – SMAD. Os bens e materiais precisam estar entregues até 05 de outubro, antes da produção final das peças do evento.</p>
+    </div>
+    <div class="tl rv">
+      <div class="tl__i">
+        <div class="tl__k">08 de setembro</div>
+        <p class="tl__t">Publicação do edital no Boletim Oficial do Município.</p>
+      </div>
+      <div class="tl__i is-now">
+        <div class="tl__k">09 a 25 de setembro</div>
+        <p class="tl__t">Prazo para apresentação das propostas de patrocínio. É esta a janela para entrar no JOGA 2026.</p>
+        <span class="tl__badge">Prazo de inscrição</span>
+      </div>
+      <div class="tl__i">
+        <div class="tl__k">28 a 30 de setembro</div>
+        <p class="tl__t">Resultado preliminar, prazo de recurso e publicação do resultado definitivo com a homologação.</p>
+      </div>
+      <div class="tl__i">
+        <div class="tl__k">Até 05 de outubro</div>
+        <p class="tl__t">Entrega dos bens e materiais, conforme o Termo de Patrocínio assinado.</p>
+      </div>
+    </div>
+    <div class="deadline rv">
+      <span class="deadline__k">26.10 a 07.11</span>
+      <span class="deadline__t">O JOGA 2026 acontece: competições em arenas e ginásios de toda a cidade, cerimônias de abertura e encerramento e cobertura oficial.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MODALIDADES ============ -->
+<section class="section sec--white" id="modalidades">
+  <div class="container">
+    <div class="section__head rv">
+      <span class="eyebrow">23 modalidades em 7 blocos</span>
+      <h2 class="display display--sm">Uma cidade inteira<br><em class="ink ink--g">virando arena</em></h2>
+      <p class="lead">Cada modalidade é um ponto de contato próprio, com público, local e horário distintos. Modalidades em destaque na 2ª edição:</p>
+    </div>
+    <div class="mods rv">
+      <span class="mod">Voleibol 6x6</span>
+      <span class="mod">Futebol 7</span>
+      <span class="mod">Futsal 5x5</span>
+      <span class="mod">Basquete 3x3</span>
+      <span class="mod">Caçador</span>
+      <span class="mod">Beach Tennis</span>
+      <span class="mod">Tênis de Mesa</span>
+      <span class="mod">Corrida</span>
+      <span class="mod">Bolão</span>
+      <span class="mod">Trilha</span>
+      <span class="mod">Xadrez</span>
+      <span class="mod">Cabo de Guerra</span>
+      <span class="mod">+ demais modalidades do regulamento</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA / CONTATO ============ -->
+<section class="section cta" id="contato">
+  <div class="container">
+    <div class="section__head rv" style="margin-bottom:0">
+      <span class="eyebrow eyebrow--light">Vamos conversar</span>
+      <h2 class="display display--light">Sua marca no<br><span style="color:var(--yellow)">JOGA 2026</span></h2>
+      <p class="lead lead--light">As propostas vão até <strong>25 de setembro de 2026</strong>. Procure a organização do JOGA para entender as categorias e montar a sua proposta — estamos abertos a apoio financeiro, em produtos, em serviços, em estrutura e em premiação.</p>
+    </div>
+
+    <div class="contact rv">
+      <div class="contact__c">
+        <div class="contact__r">Onde enviar a proposta</div>
+        <div class="contact__n">Secretaria de Administração</div>
+        <p class="contact__d">
+          Chamamento Público nº 02/2026 – SMAD<br>
+          E-mail: <strong>administracao@guarapuava.pr.gov.br</strong><br>
+          Ou no Protocolo Geral do Município — Rua Brigadeiro Rocha, 2.777, Centro, Guarapuava/PR.
+        </p>
+      </div>
+      <div class="contact__c">
+        <div class="contact__r">Dúvidas e proposta comercial</div>
+        <div class="contact__n">Organização do JOGA 2026</div>
+        <p class="contact__d">
+          Coordenação de Comunicação · Prefeitura de Guarapuava<br>
+          Fale com a equipe do JOGA para entender qual categoria combina com a sua empresa. Pedidos de esclarecimento sobre o edital vão à Comissão de Seleção até 2 dias úteis antes do fim do prazo.
+        </p>
+      </div>
+    </div>
+
+    <div class="hero__cta rv" style="margin-top:32px">
+      <a class="btn btn--primary btn--big" href="index.html">Conhecer o site oficial</a>
+      <a class="btn btn--ghost btn--big" href="https://www.instagram.com/joga2025prefes/" target="_blank" rel="noopener">Instagram do JOGA</a>
+      <a class="btn btn--ghost btn--big" href="#cotas">Rever as cotas</a>
+    </div>
+  </div>
+</section>
+<div class="band" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <img src="assets/logo_mark.png" alt="JOGA 2026">
+      <div style="font-family:var(--fMark);font-size:19px;color:var(--yellow)">Energia para servir, disposição para jogar</div>
+      <a href="https://www.instagram.com/joga2025prefes/" target="_blank" rel="noopener" style="font-size:13.5px;font-weight:700;letter-spacing:.04em">@joga2025prefes</a>
+    </div>
+    <p class="footer__cred">
+      © 2026 JOGA — Jogos dos Servidores Municipais de Guarapuava. Realização da Prefeitura Municipal de Guarapuava, por meio da Secretaria Municipal de Administração. Material informativo baseado em informações oficiais do programa; não substitui a consulta direta ao Edital de Chamamento Público nº 02/2026 – SMAD e demais editais publicados pelo município.
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* ---- Marquee ---- */
+  var frases = ['26 DE OUTUBRO A 07 DE NOVEMBRO DE 2026','PROPOSTAS ATÉ 25 DE SETEMBRO','2.500 PARTICIPANTES PREVISTOS','23 MODALIDADES','6 EQUIPES','SEJA APOIADOR DO JOGA 2026'];
+  var track = document.getElementById('marq');
+  if(track){
+    var html = '';
+    for(var r=0;r<2;r++){
+      for(var i=0;i<frases.length;i++){
+        html += '<span>'+frases[i]+' <em>·</em></span>';
+      }
+    }
+    track.innerHTML = html;
+  }
+
+  /* ---- Nav ---- */
+  var nav = document.getElementById('nav');
+  var burger = document.getElementById('burger');
+  if(burger){
+    burger.addEventListener('click',function(){
+      var open = nav.classList.toggle('is-open');
+      burger.classList.toggle('is-open',open);
+      burger.setAttribute('aria-expanded',open?'true':'false');
+    });
+    document.querySelectorAll('#navMobile a').forEach(function(a){
+      a.addEventListener('click',function(){
+        nav.classList.remove('is-open');
+        burger.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+  window.addEventListener('scroll',function(){
+    if(nav) nav.classList.toggle('is-scrolled', window.scrollY > 24);
+  },{passive:true});
+
+  /* ---- Reveal ---- */
+  var els = document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('is-in'); });
+  }
+  window.addEventListener('beforeprint',function(){
+    document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('is-in'); });
+  });
+})();
+</script>
+</body>
+</html>
